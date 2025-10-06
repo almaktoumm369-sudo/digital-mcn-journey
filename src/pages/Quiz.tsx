@@ -4,6 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Trophy, Star, ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import maskDan from "@/assets/mask-dan.jpg";
+import kenteCloth from "@/assets/kente-cloth.jpg";
+import sculptureSenufo from "@/assets/sculpture-senufo.jpg";
+import djembe from "@/assets/djembe.jpg";
 
 const Quiz = () => {
   const { toast } = useToast();
@@ -16,35 +20,70 @@ const Quiz = () => {
   const questions = [
     {
       question: "De quel pays provient le masque Dan ?",
-      image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=600&h=400&fit=crop",
+      image: maskDan,
       answers: ["Ghana", "Côte d'Ivoire", "Sénégal", "Nigeria"],
       correctAnswer: 1,
       explanation: "Le masque Dan est originaire de la région frontalière entre la Côte d'Ivoire et le Liberia.",
     },
     {
       question: "Quel est le nom du tissu traditionnel ghanéen ?",
-      image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=600&h=400&fit=crop",
+      image: kenteCloth,
       answers: ["Bogolan", "Kente", "Mudcloth", "Ankara"],
       correctAnswer: 1,
       explanation: "Le Kente est un tissu traditionnel du Ghana, tissé à la main avec des motifs colorés symboliques.",
     },
     {
       question: "À quelle période remonte la civilisation de l'Égypte Antique ?",
-      image: "https://images.unsplash.com/photo-1569098644584-210bcd375b59?w=600&h=400&fit=crop",
+      image: sculptureSenufo,
       answers: ["3000 av. J.-C.", "1000 av. J.-C.", "500 apr. J.-C.", "1500 apr. J.-C."],
       correctAnswer: 0,
       explanation: "La civilisation égyptienne antique a commencé vers 3000 av. J.-C. et a duré plus de 3000 ans.",
     },
     {
       question: "Quel instrument de musique est le djembé ?",
-      image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&h=400&fit=crop",
+      image: djembe,
       answers: ["Une flûte", "Un tambour", "Une harpe", "Une guitare"],
       correctAnswer: 1,
       explanation: "Le djembé est un tambour traditionnel d'Afrique de l'Ouest, joué avec les mains.",
     },
     {
       question: "Quelle est la fonction principale des masques africains traditionnels ?",
-      image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=600&h=400&fit=crop",
+      image: maskDan,
+      answers: ["Décoration", "Rituels et cérémonies", "Commerce", "Protection du soleil"],
+      correctAnswer: 1,
+      explanation: "Les masques africains jouent un rôle central dans les rituels, cérémonies et performances culturelles.",
+    },
+    {
+      question: "Quel royaume africain était célèbre pour ses sculptures en bronze ?",
+      image: sculptureSenufo,
+      answers: ["Royaume du Mali", "Royaume du Bénin", "Royaume du Ghana", "Royaume d'Axoum"],
+      correctAnswer: 1,
+      explanation: "Le Royaume du Bénin (actuel Nigeria) était réputé pour ses magnifiques sculptures en bronze.",
+    },
+    {
+      question: "Quelle civilisation a construit les pyramides de Méroé ?",
+      image: sculptureSenufo,
+      answers: ["L'Égypte ancienne", "Le Royaume de Koush", "Le Royaume d'Axoum", "Le Mali ancien"],
+      correctAnswer: 1,
+      explanation: "Le Royaume de Koush (Nubie, actuel Soudan) a construit les pyramides de Méroé.",
+    },
+    {
+      question: "Quel empire ouest-africain était le plus riche au XIVe siècle ?",
+      image: sculptureSenufo,
+      answers: ["Empire du Ghana", "Empire du Mali", "Empire Songhai", "Empire du Kanem-Bornou"],
+      correctAnswer: 1,
+      explanation: "L'Empire du Mali sous Mansa Moussa était l'empire le plus riche du monde.",
+    },
+    {
+      question: "Quelle est l'origine du mot 'Kente' ?",
+      image: kenteCloth,
+      answers: ["Panier", "Roi", "Tisser", "Couleur"],
+      correctAnswer: 0,
+      explanation: "Le mot 'Kente' vient du mot Akan 'kenten' qui signifie 'panier'.",
+    },
+    {
+      question: "Quelle ville africaine abritait la plus grande université médiévale ?",
+      image: sculptureSenufo,
       answers: ["Décoration", "Rituels et cérémonies", "Commerce", "Protection du soleil"],
       correctAnswer: 1,
       explanation: "Les masques africains jouent un rôle central dans les rituels, cérémonies et performances culturelles.",

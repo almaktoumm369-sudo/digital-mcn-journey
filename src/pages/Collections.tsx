@@ -12,6 +12,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import maskDan from "@/assets/mask-dan.jpg";
+import kenteCloth from "@/assets/kente-cloth.jpg";
+import throneBamoun from "@/assets/throne-bamoun.jpg";
+import sculptureSenufo from "@/assets/sculpture-senufo.jpg";
+import djembe from "@/assets/djembe.jpg";
 
 const Collections = () => {
   const { toast } = useToast();
@@ -27,7 +32,7 @@ const Collections = () => {
       category: "Masques",
       period: "XIXe siècle",
       likes: 234,
-      image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=400&h=400&fit=crop",
+      image: maskDan,
     },
     {
       id: 2,
@@ -36,7 +41,7 @@ const Collections = () => {
       category: "Mobilier",
       period: "XVIIIe siècle",
       likes: 189,
-      image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=400&fit=crop",
+      image: throneBamoun,
     },
     {
       id: 3,
@@ -45,7 +50,7 @@ const Collections = () => {
       category: "Textiles",
       period: "XXe siècle",
       likes: 312,
-      image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=400&h=400&fit=crop",
+      image: kenteCloth,
     },
     {
       id: 4,
@@ -54,7 +59,7 @@ const Collections = () => {
       category: "Sculptures",
       period: "XIXe siècle",
       likes: 276,
-      image: "https://images.unsplash.com/photo-1569098644584-210bcd375b59?w=400&h=400&fit=crop",
+      image: sculptureSenufo,
     },
     {
       id: 5,
@@ -63,7 +68,7 @@ const Collections = () => {
       category: "Masques",
       period: "XIXe siècle",
       likes: 156,
-      image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=400&h=400&fit=crop",
+      image: maskDan,
     },
     {
       id: 6,
@@ -72,7 +77,7 @@ const Collections = () => {
       category: "Céramiques",
       period: "XXe siècle",
       likes: 98,
-      image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=400&fit=crop",
+      image: djembe,
     },
     {
       id: 7,
@@ -81,7 +86,7 @@ const Collections = () => {
       category: "Sculptures",
       period: "XVIIIe siècle",
       likes: 203,
-      image: "https://images.unsplash.com/photo-1569098644584-210bcd375b59?w=400&h=400&fit=crop",
+      image: sculptureSenufo,
     },
     {
       id: 8,
@@ -90,7 +95,7 @@ const Collections = () => {
       category: "Bijouterie",
       period: "XXe siècle",
       likes: 145,
-      image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=400&h=400&fit=crop",
+      image: kenteCloth,
     },
     {
       id: 9,
@@ -99,7 +104,7 @@ const Collections = () => {
       category: "Masques",
       period: "XIXe siècle",
       likes: 187,
-      image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=400&h=400&fit=crop",
+      image: maskDan,
     },
     {
       id: 10,
@@ -108,7 +113,7 @@ const Collections = () => {
       category: "Instruments",
       period: "XXe siècle",
       likes: 223,
-      image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=400&fit=crop",
+      image: djembe,
     },
     {
       id: 11,
@@ -117,7 +122,7 @@ const Collections = () => {
       category: "Sculptures",
       period: "XVIIIe siècle",
       likes: 165,
-      image: "https://images.unsplash.com/photo-1569098644584-210bcd375b59?w=400&h=400&fit=crop",
+      image: sculptureSenufo,
     },
     {
       id: 12,
@@ -126,7 +131,115 @@ const Collections = () => {
       category: "Artisanat",
       period: "XXe siècle",
       likes: 132,
-      image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=400&h=400&fit=crop",
+      image: kenteCloth,
+    },
+    {
+      id: 13,
+      title: "Masque Kifwebe",
+      origin: "République Démocratique du Congo",
+      category: "Masques",
+      period: "XIXe siècle",
+      likes: 198,
+      image: maskDan,
+    },
+    {
+      id: 14,
+      title: "Tissu Bogolan",
+      origin: "Mali",
+      category: "Textiles",
+      period: "XXe siècle",
+      likes: 176,
+      image: kenteCloth,
+    },
+    {
+      id: 15,
+      title: "Sculpture Bamiléké",
+      origin: "Cameroun",
+      category: "Sculptures",
+      period: "XVIIIe siècle",
+      likes: 211,
+      image: sculptureSenufo,
+    },
+    {
+      id: 16,
+      title: "Kora",
+      origin: "Sénégal",
+      category: "Instruments",
+      period: "XXe siècle",
+      likes: 189,
+      image: djembe,
+    },
+    {
+      id: 17,
+      title: "Tabouret Akan",
+      origin: "Ghana",
+      category: "Mobilier",
+      period: "XIXe siècle",
+      likes: 154,
+      image: throneBamoun,
+    },
+    {
+      id: 18,
+      title: "Masque Punu",
+      origin: "Gabon",
+      category: "Masques",
+      period: "XIXe siècle",
+      likes: 205,
+      image: maskDan,
+    },
+    {
+      id: 19,
+      title: "Poterie Nok",
+      origin: "Nigeria",
+      category: "Céramiques",
+      period: "500 av. J.-C.",
+      likes: 289,
+      image: djembe,
+    },
+    {
+      id: 20,
+      title: "Sculpture Yoruba",
+      origin: "Nigeria",
+      category: "Sculptures",
+      period: "XVIIIe siècle",
+      likes: 267,
+      image: sculptureSenufo,
+    },
+    {
+      id: 21,
+      title: "Masque Gelede",
+      origin: "Bénin",
+      category: "Masques",
+      period: "XIXe siècle",
+      likes: 178,
+      image: maskDan,
+    },
+    {
+      id: 22,
+      title: "Tissu Adinkra",
+      origin: "Ghana",
+      category: "Textiles",
+      period: "XXe siècle",
+      likes: 142,
+      image: kenteCloth,
+    },
+    {
+      id: 23,
+      title: "Statuette Lobi",
+      origin: "Burkina Faso",
+      category: "Sculptures",
+      period: "XIXe siècle",
+      likes: 193,
+      image: sculptureSenufo,
+    },
+    {
+      id: 24,
+      title: "Balafon",
+      origin: "Côte d'Ivoire",
+      category: "Instruments",
+      period: "XXe siècle",
+      likes: 167,
+      image: djembe,
     },
   ];
 
@@ -162,7 +275,6 @@ const Collections = () => {
           </p>
         </div>
 
-        {/* Filters */}
         <div className="mb-8 flex flex-col md:flex-row gap-4">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground" size={20} />
@@ -188,12 +300,10 @@ const Collections = () => {
           </Select>
         </div>
 
-        {/* Results count */}
         <div className="mb-6 text-muted-foreground">
           {filteredArtworks.length} œuvre(s) trouvée(s)
         </div>
 
-        {/* Artworks Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredArtworks.map((artwork) => (
             <Card key={artwork.id} className="group overflow-hidden hover:shadow-xl transition-all duration-300">

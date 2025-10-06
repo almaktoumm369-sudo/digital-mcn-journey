@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, ArrowRight, Calendar } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import museumHero from "@/assets/museum-hero.jpg";
+import maskDan from "@/assets/mask-dan.jpg";
+import kenteCloth from "@/assets/kente-cloth.jpg";
+import throneBamoun from "@/assets/throne-bamoun.jpg";
+import sculptureSenufo from "@/assets/sculpture-senufo.jpg";
+import djembe from "@/assets/djembe.jpg";
 
 const Home = () => {
   const { toast } = useToast();
@@ -15,19 +21,19 @@ const Home = () => {
       id: 1,
       title: "Exposition: L'Art du Masque",
       date: "15-30 Octobre 2025",
-      image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=800&h=600&fit=crop",
+      image: maskDan,
     },
     {
       id: 2,
       title: "Conférence: Civilisations Africaines",
       date: "20 Octobre 2025",
-      image: "https://images.unsplash.com/photo-1569098644584-210bcd375b59?w=800&h=600&fit=crop",
+      image: sculptureSenufo,
     },
     {
       id: 3,
       title: "Atelier: Tissage Traditionnel",
       date: "25 Octobre 2025",
-      image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800&h=600&fit=crop",
+      image: kenteCloth,
     },
   ];
 
@@ -37,28 +43,28 @@ const Home = () => {
       title: "Masque Dan",
       origin: "Côte d'Ivoire",
       likes: 234,
-      image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=400&h=400&fit=crop",
+      image: maskDan,
     },
     {
       id: 2,
       title: "Trône Bamoun",
       origin: "Cameroun",
       likes: 189,
-      image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=400&fit=crop",
+      image: throneBamoun,
     },
     {
       id: 3,
       title: "Tissage Kente",
       origin: "Ghana",
       likes: 312,
-      image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=400&h=400&fit=crop",
+      image: kenteCloth,
     },
     {
       id: 4,
       title: "Statue Sénoufo",
       origin: "Mali",
       likes: 276,
-      image: "https://images.unsplash.com/photo-1569098644584-210bcd375b59?w=400&h=400&fit=crop",
+      image: sculptureSenufo,
     },
   ];
 
@@ -68,28 +74,28 @@ const Home = () => {
       title: "Masque Baoulé",
       category: "Masques",
       likes: 156,
-      image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=300&h=300&fit=crop",
+      image: maskDan,
     },
     {
       id: 6,
       title: "Poterie Berbère",
       category: "Céramiques",
       likes: 98,
-      image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=300&h=300&fit=crop",
+      image: djembe,
     },
     {
       id: 7,
       title: "Sculpture Dogon",
       category: "Sculptures",
       likes: 203,
-      image: "https://images.unsplash.com/photo-1569098644584-210bcd375b59?w=300&h=300&fit=crop",
+      image: sculptureSenufo,
     },
     {
       id: 8,
       title: "Bijoux Touareg",
       category: "Bijouterie",
       likes: 145,
-      image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=300&h=300&fit=crop",
+      image: kenteCloth,
     },
   ];
 
@@ -116,12 +122,11 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1564221710304-0b37c8b9d729?w=1920&h=1080&fit=crop')",
+            backgroundImage: `url(${museumHero})`,
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background"></div>
@@ -149,7 +154,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Events Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-foreground">Événements à Venir</h2>
@@ -194,7 +198,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Artworks */}
       <section className="container mx-auto px-4 py-16 bg-muted/30 rounded-3xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-foreground">Œuvres Vedettes</h2>
@@ -243,11 +246,33 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Collection Preview */}
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-foreground">Notre Collection</h2>
           <p className="text-muted-foreground text-lg">Un aperçu de notre riche patrimoine</p>
+        </div>
+
+        <div className="mb-8 overflow-hidden bg-primary/10 py-4 rounded-lg">
+          <div className="animate-marquee whitespace-nowrap">
+            <span className="text-lg font-medium text-primary mx-4">
+              ✨ Plus de 15 000 œuvres d'art africain du monde entier
+            </span>
+            <span className="text-lg font-medium text-primary mx-4">
+              🎭 Des masques ancestraux aux sculptures contemporaines
+            </span>
+            <span className="text-lg font-medium text-primary mx-4">
+              🏛️ Un voyage à travers les civilisations noires
+            </span>
+            <span className="text-lg font-medium text-primary mx-4">
+              ✨ Plus de 15 000 œuvres d'art africain du monde entier
+            </span>
+            <span className="text-lg font-medium text-primary mx-4">
+              🎭 Des masques ancestraux aux sculptures contemporaines
+            </span>
+            <span className="text-lg font-medium text-primary mx-4">
+              🏛️ Un voyage à travers les civilisations noires
+            </span>
+          </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -300,7 +325,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="container mx-auto px-4 py-16">
         <Card className="bg-gradient-to-r from-primary to-accent text-primary-foreground p-12 text-center">
           <h2 className="text-4xl font-bold mb-4">Rejoignez Notre Communauté</h2>
